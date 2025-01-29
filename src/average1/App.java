@@ -15,14 +15,16 @@ public class App {
         double firstGrade = sc.nextDouble();
 
         System.out.print("Segunda nota: ");
-        double secondeGrade = sc.nextDouble();
+        double secondGrade = sc.nextDouble();
 
-        double weight1 = 3.5;
-        double weight2 = 7.5;
+        if (firstGrade <= 10.0 && secondGrade <= 10.0) {
+            double weight1 = 3.5;
+            double weight2 = 7.5;
 
-        double average = (firstGrade * weight1 + secondeGrade * weight2) / (weight1 + weight2);
+            double average = (firstGrade * weight1 + secondGrade * weight2) / (weight1 + weight2);
 
-        System.out.printf("MEDIA = %.5f%n", average);
+            System.out.printf("MEDIA = %.5f%n", average);
+        }
 
         sc.close();
 
